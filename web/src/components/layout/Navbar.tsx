@@ -29,9 +29,9 @@ export function Navbar() {
             >
                 <div className="max-w-7xl mx-auto flex items-center justify-between">
                     <Link href="/" className="flex items-center relative z-50">
-                        <div className="relative h-16 w-64">
+                        <div className="relative h-20 w-80">
                             <Image
-                                src="/sahayak-logo.jpeg"
+                                src="/sahayak-logo-new.png"
                                 alt="Sahayak Logo"
                                 fill
                                 className="object-contain object-left"
