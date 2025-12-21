@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --sahayak-green: #2D5A27;
+  --sahayak-cream: #FDF5E6;
+  --sahayak-dark: #1F2937;
+  --sahayak-muted: #6B7280;
+  
+  --radius-lg: 24px;
+}
+
+@theme inline {
+  --color-sahayak-green: var(--sahayak-green);
+  --color-sahayak-cream: var(--sahayak-cream);
+  --color-sahayak-dark: var(--sahayak-dark);
+  --color-sahayak-muted: var(--sahayak-muted);
+  
+  --color-background: var(--sahayak-cream);
+  --color-foreground: var(--sahayak-dark);
+
+  --radius-lg: var(--radius-lg);
+  
+  --font-sans: var(--font-outfit);
+}
+
+body {
+  background-color: var(--sahayak-cream);
+  color: var(--sahayak-dark);
+}
