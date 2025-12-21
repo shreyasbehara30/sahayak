@@ -3,6 +3,17 @@ import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import { ArrowLeft, Download, ShieldCheck, AlertTriangle, CheckCircle, Settings, Smartphone, Wifi, Mic, Book, FileText } from "lucide-react";
 
+export async function generateStaticParams() {
+    return [
+        { slug: "install" },
+        { slug: "requirements" },
+        { slug: "teacher-guide" },
+        { slug: "student-guide" },
+        { slug: "privacy" },
+        { slug: "data-safety" },
+    ];
+}
+
 export default async function DocPage({
     params,
 }: {
