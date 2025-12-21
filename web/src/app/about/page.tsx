@@ -4,7 +4,7 @@ import { Section } from "@/components/ui/Section";
 import { Card } from "@/components/ui/Card";
 import { Footer } from "@/components/layout/Footer";
 import Image from "next/image";
-import { m, LazyMotion, domAnimation } from "framer-motion";
+import { m, LazyMotion, domAnimation, type Variants } from "framer-motion";
 
 const team = [
     {
@@ -24,7 +24,7 @@ const team = [
 ];
 
 // Animation variants - Google Antigravity style
-const containerVariants = {
+const containerVariants: Variants = {
     hidden: { opacity: 0 },
     show: {
         opacity: 1,
@@ -35,13 +35,13 @@ const containerVariants = {
     }
 };
 
-const cardVariants = {
-    hidden: { 
-        opacity: 0, 
-        y: 50 
+const cardVariants: Variants = {
+    hidden: {
+        opacity: 0,
+        y: 50
     },
-    show: { 
-        opacity: 1, 
+    show: {
+        opacity: 1,
         y: 0,
         transition: {
             duration: 0.8,
@@ -50,10 +50,10 @@ const cardVariants = {
     }
 };
 
-const headingVariants = {
+const headingVariants: Variants = {
     hidden: { opacity: 0, y: 40 },
-    show: { 
-        opacity: 1, 
+    show: {
+        opacity: 1,
         y: 0,
         transition: {
             duration: 0.7,
@@ -68,7 +68,7 @@ export default function AboutPage() {
             <main className="min-h-screen bg-sahayak-cream pt-24">
                 {/* Introduction Section */}
                 <Section className="bg-white rounded-b-[40px] shadow-sm mb-12 border-b border-sahayak-green/10">
-                    <m.div 
+                    <m.div
                         className="max-w-4xl mx-auto text-center"
                         initial="hidden"
                         whileInView="show"
@@ -89,7 +89,7 @@ export default function AboutPage() {
                 {/* Team Section */}
                 <Section>
                     <div className="max-w-5xl mx-auto">
-                        <m.div 
+                        <m.div
                             className="text-center mb-16"
                             initial="hidden"
                             whileInView="show"
@@ -103,7 +103,7 @@ export default function AboutPage() {
                         <div className="grid gap-16">
                             {team.map((group, idx) => (
                                 <div key={idx}>
-                                    <m.h3 
+                                    <m.h3
                                         className="text-xl font-bold text-sahayak-green mb-8 text-center uppercase tracking-widest opacity-80 border-b border-sahayak-green/10 pb-4 max-w-xs mx-auto"
                                         initial={{ opacity: 0, y: 30 }}
                                         whileInView={{ opacity: 0.8, y: 0 }}
@@ -112,7 +112,7 @@ export default function AboutPage() {
                                     >
                                         {group.role}
                                     </m.h3>
-                                    <m.div 
+                                    <m.div
                                         className="grid md:grid-cols-2 gap-8 justify-center max-w-3xl mx-auto"
                                         initial="hidden"
                                         whileInView="show"
