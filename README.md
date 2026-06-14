@@ -50,7 +50,7 @@ To run the web dashboard/landing page locally:
     ```
 
 4.  **Open in Browser**:
-    Visit [http://localhost:3000](http://localhost:3000) to see the application.
+    Visit https://sahayak-kappa.vercel.app/ to see the application.
 
 ## 🤝 Contributing
 
